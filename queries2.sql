@@ -112,7 +112,7 @@ group by u.UniversityName;
 # 10.Get the percentage of the result college wise.
 select
     c.CollegeName,
-    (SUM(CASE WHEN s.student_marks >= 400 THEN 1 ELSE 0 END) * 1000.0 / COUNT(s.student_id)) AS PassPercentage
+    (SUM(CASE WHEN s.student_marks >= 40 THEN 1 ELSE 0 END) * 100.0 / COUNT(s.student_id)) AS PassPercentage
 from studentcha s
 join department d ON s.DepartmentId = d.DepartmentId
 join collegecha c ON d.CollegeId = c.CollegeId
