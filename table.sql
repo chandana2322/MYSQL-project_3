@@ -9,7 +9,7 @@ UniversityAddress varchar(30));
 
 #inserting values into university Table
 insert into  universitycha values(1,'AAAAAA','public','A','raipur'),
-								 (2,'BBBBBB','public','A','bhilai'),
+				(2,'BBBBBB','public','A','bhilai'),
                                  (3,'CCCCCC','private','B','durg'),
                                  (4,'DDDDDD','Arts','C','rajnandagaon'),
                                  (5,'EEEEEE','medical','B','bilaspur');
@@ -47,7 +47,7 @@ CollegeId int,
 
 #inserting values into department Table
 insert into department values(101,'computers',10,'cse',1),
-						  (102,'electronic',5,'ece',2),
+			   (102,'electronic',5,'ece',2),
                           (103,'mechanical',4,'mech',3),
                           (104, 'Medical', 5, 'pharma', 4);
 select * from department;
@@ -66,7 +66,7 @@ foreign key (DepartmentId) references department(DepartmentId));
 
 #inserting values into Professor Table
 insert into professorcha values(1,'ravi','vizag',30,50000,101),
-							(2,'gopal','hyderabad',35,40000,102),
+			     (2,'gopal','hyderabad',35,40000,102),
                             (3,'hema','bilaspur',40,60000,103),
                             (4,'sundar','raipur',45,65000,104);
 select * from professorcha;                       
