@@ -87,10 +87,10 @@ foreign key(DepartmentId) references department(DepartmentId));
 
 #inserting values into student Table
 insert into studentcha values
-   (1, 'chandu', 'ambikapur', 25, 80, 800, 'Firstdivision', 101),
-   (3, 'vijju', 'vizag', 24, 70, 700, 'Thirddivision', 102),
-   (2, 'devi', 'durg', 27, 30, 300, 'Failed', 103),
-   (4, 'durga', 'raipur', 26, 40, 400, 'Seconddivision', 104);
+   (1, 'chandu', 'ambikapur', 25, 80, 80, 'Firstdivision', 101),
+   (3, 'vijju', 'vizag', 24, 70, 70, 'Thirddivision', 102),
+   (2, 'devi', 'durg', 27, 30, 30, 'Failed', 103),
+   (4, 'durga', 'raipur', 26, 40, 40, 'Seconddivision', 104);
 commit;
 select * from studentcha;
                            
